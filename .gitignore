@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local claude/stitch config
+.claude/
+.stitch/
+
+# private reference images
+references/private/

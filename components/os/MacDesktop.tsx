@@ -283,11 +283,9 @@ export default function MacDesktop() {
       <div className="os-desktop-icons">
         {DESKTOP_ICONS.map((id) => (
           <button key={id} className="os-desktop-icon" onDoubleClick={() => openApp(id)} onClick={() => openApp(id)}>
-            <span
-              className="os-desktop-icon__badge"
-              style={{ background: `linear-gradient(160deg, ${APP_BY_ID[id].grad[0]}, ${APP_BY_ID[id].grad[1]})` }}
-            >
-              <Sym name={APP_BY_ID[id].icon} size={24} fill />
+            <span className="os-desktop-icon__badge">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={`/assets/dock/${id}.png`} alt="" width={52} height={52} draggable={false} />
             </span>
             <span className="os-desktop-icon__label">{APP_BY_ID[id].name}</span>
           </button>

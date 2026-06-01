@@ -52,28 +52,38 @@ export type Wallpaper = { name: string; light: string; dark: string };
 
 export const WALLPAPERS: Wallpaper[] = [
   {
-    name: "Tarosh OS",
-    light: "linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.18)), url('/assets/generated/tarosh-os-wallpaper.png')",
-    dark: "linear-gradient(180deg, rgba(5,8,16,.18), rgba(5,8,16,.42)), url('/assets/generated/tarosh-os-wallpaper.png')",
+    // Default — a soft multi-bloom "aurora mesh". Pure CSS, crisp at any size.
+    name: "Aurora",
+    light:
+      "radial-gradient(60% 52% at 14% 14%, rgba(255,214,0,.34), transparent 60%), radial-gradient(56% 46% at 86% 8%, rgba(255,122,178,.34), transparent 60%), radial-gradient(62% 56% at 90% 88%, rgba(108,166,255,.36), transparent 60%), radial-gradient(56% 50% at 8% 90%, rgba(160,130,255,.32), transparent 60%), radial-gradient(70% 60% at 48% 48%, rgba(255,255,255,.32), transparent 72%), linear-gradient(135deg,#fdf3ff,#e9f0ff)",
+    dark:
+      "radial-gradient(58% 48% at 14% 12%, rgba(255,214,0,.20), transparent 56%), radial-gradient(52% 44% at 86% 6%, rgba(255,0,98,.34), transparent 56%), radial-gradient(64% 58% at 90% 84%, rgba(47,111,228,.40), transparent 60%), radial-gradient(58% 50% at 6% 90%, rgba(124,92,255,.34), transparent 56%), linear-gradient(160deg,#06060d,#0b0d18 55%,#100a16)",
+  },
+  {
+    // Vivid saturated flow — bolder, more "wow".
+    name: "Nebula",
+    light:
+      "radial-gradient(50% 60% at 0% 0%, rgba(124,92,255,.40), transparent 55%), radial-gradient(60% 60% at 100% 0%, rgba(255,0,98,.34), transparent 55%), radial-gradient(70% 70% at 100% 100%, rgba(0,184,212,.40), transparent 58%), radial-gradient(60% 60% at 0% 100%, rgba(255,176,0,.36), transparent 58%), linear-gradient(135deg,#f3eaff,#eafcff)",
+    dark:
+      "radial-gradient(55% 65% at 0% 0%, rgba(124,92,255,.42), transparent 55%), radial-gradient(60% 60% at 100% 4%, rgba(255,0,98,.40), transparent 55%), radial-gradient(72% 72% at 100% 100%, rgba(0,184,212,.40), transparent 58%), radial-gradient(60% 62% at 0% 100%, rgba(255,176,0,.30), transparent 58%), linear-gradient(135deg,#070611,#0a0814 60%,#0c0610)",
   },
   {
     name: "Sunrise",
-    light: "radial-gradient(1000px 700px at 18% 12%, rgba(255,214,0,.28), transparent 60%), radial-gradient(900px 700px at 85% 25%, rgba(255,0,98,.20), transparent 58%), linear-gradient(165deg,#fff7ef,#ffeef6 60%,#fef3ff)",
-    dark: "radial-gradient(1000px 700px at 18% 12%, rgba(255,214,0,.16), transparent 60%), radial-gradient(900px 700px at 85% 25%, rgba(255,0,98,.16), transparent 58%), linear-gradient(165deg,#17151b,#1b1320 60%,#1a1622)",
-  },
-  {
-    name: "Blossom",
-    light: "radial-gradient(900px 700px at 80% 15%, rgba(255,0,98,.22), transparent 60%), radial-gradient(900px 800px at 20% 90%, rgba(47,111,228,.20), transparent 60%), linear-gradient(160deg,#fdf0f6,#eef0ff)",
-    dark: "radial-gradient(900px 700px at 80% 15%, rgba(255,0,98,.18), transparent 60%), radial-gradient(900px 800px at 20% 90%, rgba(47,111,228,.18), transparent 60%), linear-gradient(160deg,#181318,#11131f)",
+    light:
+      "radial-gradient(70% 60% at 50% 0%, rgba(255,176,0,.42), transparent 62%), radial-gradient(60% 55% at 85% 20%, rgba(255,0,98,.28), transparent 60%), radial-gradient(60% 60% at 12% 30%, rgba(255,214,0,.30), transparent 60%), linear-gradient(165deg,#fff6ec,#ffeef4 55%,#fdf1ff)",
+    dark:
+      "radial-gradient(70% 60% at 50% 0%, rgba(255,140,0,.26), transparent 60%), radial-gradient(60% 55% at 85% 18%, rgba(255,0,98,.24), transparent 58%), radial-gradient(60% 60% at 12% 28%, rgba(255,214,0,.16), transparent 58%), linear-gradient(165deg,#15110f,#1a1018 60%,#191320)",
   },
   {
     name: "Ocean",
-    light: "radial-gradient(1000px 700px at 15% 20%, rgba(47,111,228,.22), transparent 60%), radial-gradient(900px 700px at 88% 80%, rgba(0,184,148,.20), transparent 60%), linear-gradient(165deg,#eef4ff,#eafaf4)",
-    dark: "radial-gradient(1000px 700px at 15% 20%, rgba(47,111,228,.20), transparent 60%), radial-gradient(900px 700px at 88% 80%, rgba(0,184,148,.16), transparent 60%), linear-gradient(165deg,#101521,#0f1a18)",
+    light:
+      "radial-gradient(60% 60% at 12% 16%, rgba(47,111,228,.34), transparent 60%), radial-gradient(64% 60% at 90% 84%, rgba(0,184,148,.32), transparent 60%), radial-gradient(50% 50% at 60% 30%, rgba(0,184,212,.24), transparent 60%), linear-gradient(165deg,#eaf3ff,#e7fbf4)",
+    dark:
+      "radial-gradient(60% 60% at 12% 16%, rgba(47,111,228,.34), transparent 58%), radial-gradient(66% 62% at 90% 84%, rgba(0,184,148,.26), transparent 58%), radial-gradient(50% 50% at 62% 28%, rgba(0,184,212,.22), transparent 58%), linear-gradient(165deg,#08111e,#0a1a1a)",
   },
   {
     name: "Graphite",
-    light: "linear-gradient(165deg,#f6f6f8,#eceef3)",
-    dark: "linear-gradient(165deg,#1a1a1d,#1e1e23)",
+    light: "radial-gradient(80% 60% at 50% 0%, rgba(13,13,13,.05), transparent 60%), linear-gradient(165deg,#f7f7f9,#eceef3)",
+    dark: "radial-gradient(80% 60% at 50% 0%, rgba(255,255,255,.05), transparent 60%), linear-gradient(165deg,#191920,#1d1d24)",
   },
 ];

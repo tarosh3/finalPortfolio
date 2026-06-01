@@ -1164,6 +1164,9 @@
   transition: background 0.15s ease, color 0.15s ease;
 }
 .os-side__item:hover { background: rgba(13, 13, 13, 0.05); color: var(--text); }
+.os-side__badge { margin-left: auto; font-size: 0.72rem; font-weight: 700; color: var(--text-light); background: rgba(13, 13, 13, 0.06); padding: 1px 8px; border-radius: var(--radius-pill); }
+.os-side__item.is-active .os-side__badge { color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); }
+.is-dark .os-side__badge { background: rgba(255, 255, 255, 0.08); }
 .os-side__item.is-active {
   color: var(--accent);
   background: color-mix(in srgb, var(--accent) 11%, transparent);

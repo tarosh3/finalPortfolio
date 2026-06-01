@@ -780,7 +780,7 @@
   inset: 2px 4px auto;
   height: 42%;
   border-radius: 11px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.48), transparent);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), transparent);
 }
 .os-dock__icon::after {
   content: "";
@@ -993,7 +993,7 @@
 .os-dock__thumb-bar i:nth-child(2) { background: #febc2e; }
 .os-dock__thumb-bar i:nth-child(3) { background: #28c840; }
 .os-dock__thumb-body { flex: 1; display: flex; align-items: flex-end; gap: 4px; padding: 5px 6px; background: var(--bg-soft); }
-.os-dock__thumb-badge { width: 16px; height: 16px; border-radius: 5px; display: grid; place-items: center; color: #fff; flex-shrink: 0; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35); }
+.os-dock__thumb-badge { width: 16px; height: 16px; border-radius: 5px; overflow: hidden; display: grid; place-items: center; color: #fff; flex-shrink: 0; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35); }
 .os-dock__thumb-lines { display: flex; flex-direction: column; gap: 3px; flex: 1; padding-bottom: 1px; }
 .os-dock__thumb-lines i { height: 3px; border-radius: 2px; background: var(--border); }
 .os-dock__thumb-lines i:first-child { width: 82%; }

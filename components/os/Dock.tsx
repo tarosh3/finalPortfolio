@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef } from "react";
 import { APP_BY_ID, APPS, type AppId } from "@/lib/os";
-import Sym from "./Sym";
+import AppIcon from "./AppIcon";
 
 type Props = {
   openIds: Set<AppId>;
@@ -78,11 +78,8 @@ export default function Dock({ openIds, minimized, onOpen, onRestore }: Props) {
             aria-label={app.name}
           >
             <span className="os-dock__tooltip">{app.name}</span>
-            <span
-              className="os-dock__icon"
-              style={{ background: `linear-gradient(160deg, ${app.grad[0]}, ${app.grad[1]})` }}
-            >
-              <Sym name={app.icon} size={26} fill className="os-dock__glyph" />
+            <span className="os-dock__icon">
+              <AppIcon id={app.id} size={52} />
             </span>
             <span className={`os-dock__dot ${openIds.has(app.id) ? "is-open" : ""}`} />
           </button>
@@ -103,11 +100,8 @@ export default function Dock({ openIds, minimized, onOpen, onRestore }: Props) {
               <span className="os-dock__thumb">
                 <span className="os-dock__thumb-bar"><i /><i /><i /></span>
                 <span className="os-dock__thumb-body">
-                  <span
-                    className="os-dock__thumb-badge"
-                    style={{ background: `linear-gradient(160deg, ${app.grad[0]}, ${app.grad[1]})` }}
-                  >
-                    <Sym name={app.icon} size={11} fill />
+                  <span className="os-dock__thumb-badge">
+                    <AppIcon id={id} size={16} />
                   </span>
                   <span className="os-dock__thumb-lines"><i /><i /></span>
                 </span>

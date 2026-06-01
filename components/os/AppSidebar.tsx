@@ -43,13 +43,19 @@ export default function AppSidebar({ title, status, cta, items, foot }: Props) {
       </nav>
 
       {foot && (
-        <div className="os-side__foot">
+        <button
+          type="button"
+          className="os-side__foot"
+          title="Open About Me"
+          aria-label="Open About Me"
+          onClick={() => window.dispatchEvent(new CustomEvent("os:open", { detail: "about" }))}
+        >
           <span className="os-side__avatar">{foot.initials}</span>
           <span className="os-side__who">
             <b>{foot.name}</b>
             <span>{foot.role}</span>
           </span>
-        </div>
+        </button>
       )}
     </aside>
   );

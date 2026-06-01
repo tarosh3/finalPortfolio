@@ -209,6 +209,17 @@ export default function MacDesktop() {
     return () => window.removeEventListener("keydown", onKey);
   }, [spotlight, activeId, closeApp, minApp, ctx, ccOpen]);
 
+  // Let any nested component (e.g. the sidebar name card) open an app by
+  // dispatching `window.dispatchEvent(new CustomEvent("os:open", { detail }))`.
+  useEffect(() => {
+    const onOpen = (e: Event) => {
+      const id = (e as CustomEvent<AppId>).detail;
+      if (id) openApp(id);
+    };
+    window.addEventListener("os:open", onOpen as EventListener);
+    return () => window.removeEventListener("os:open", onOpen as EventListener);
+  }, [openApp]);
+
   const openIds = new Set(windows.map((w) => w.id));
   const minimized = windows.filter((w) => w.min).map((w) => w.id);
   const activeName = activeId ? APP_BY_ID[activeId].name : "Finder";

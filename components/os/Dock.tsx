@@ -2,7 +2,6 @@
 
 import { useCallback, useEffect, useRef } from "react";
 import { APP_BY_ID, APPS, type AppId } from "@/lib/os";
-import AppIcon from "./AppIcon";
 
 type Props = {
   openIds: Set<AppId>;
@@ -79,7 +78,13 @@ export default function Dock({ openIds, minimized, onOpen, onRestore }: Props) {
           >
             <span className="os-dock__tooltip">{app.name}</span>
             <span className="os-dock__icon">
-              <AppIcon id={app.id} size={52} />
+              <img
+                src={`/assets/dock/${app.id}.png`}
+                alt=""
+                width={56}
+                height={56}
+                draggable={false}
+              />
             </span>
             <span className={`os-dock__dot ${openIds.has(app.id) ? "is-open" : ""}`} />
           </button>
@@ -101,7 +106,7 @@ export default function Dock({ openIds, minimized, onOpen, onRestore }: Props) {
                 <span className="os-dock__thumb-bar"><i /><i /><i /></span>
                 <span className="os-dock__thumb-body">
                   <span className="os-dock__thumb-badge">
-                    <AppIcon id={id} size={16} />
+                    <img src={`/assets/dock/${id}.png`} alt="" width={18} height={18} draggable={false} />
                   </span>
                   <span className="os-dock__thumb-lines"><i /><i /></span>
                 </span>

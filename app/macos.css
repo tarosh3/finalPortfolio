@@ -1308,7 +1308,7 @@
   font-weight: 800;
   letter-spacing: -0.045em;
   /* animated sheen sweeping across the wordmark */
-  background: linear-gradient(100deg, #ffffff 30%, #ffd600 48%, #ff8ab4 56%, #ffffff 74%);
+  background: linear-gradient(100deg, #ffffff 30%, #ffd600 47%, #2fd9ff 57%, #ffffff 74%);
   background-size: 220% auto;
   background-clip: text;
   -webkit-background-clip: text;
@@ -1317,7 +1317,7 @@
   filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.35)) drop-shadow(0 2px 24px rgba(0, 0, 0, 0.5));
   animation: os-hero-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.16s forwards, os-hero-shimmer 6s linear 1s infinite;
 }
-.os-hero__role { font-size: 1.05rem; font-weight: 600; color: #ffd2e3; text-shadow: 0 1px 12px rgba(0, 0, 0, 0.4); }
+.os-hero__role { font-size: 1.05rem; font-weight: 600; color: #5fe3ff; text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45); }
 .os-hero__role span { opacity: 0.55; margin: 0 5px; }
 .os-hero__meta { font-size: 0.92rem; color: rgba(255, 255, 255, 0.8); text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4); }
 .os-hero__cta {

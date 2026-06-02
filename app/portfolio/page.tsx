@@ -11,7 +11,6 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
-import ArcadeSection from "@/components/ArcadeSection";
 import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
@@ -45,7 +44,6 @@ export default function PortfolioPage() {
         <Experience />
         <Skills />
         <Projects />
-        <ArcadeSection />
         <Contact />
       </main>
     </SmoothScroll>

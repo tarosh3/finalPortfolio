@@ -127,6 +127,7 @@ export default function About() {
           </div>
 
           <div className="about__right">
+            <span className="section-num" aria-hidden>01</span>
             <span className="section-eyebrow">About Me</span>
             <div className="about__heading">
               <h2>I turn messy problems into</h2>

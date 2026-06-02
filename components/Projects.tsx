@@ -217,6 +217,7 @@ export default function Projects() {
           {/* Intro panel */}
           <div className="projects__intro">
             <div className="projects__intro-copy">
+              <span className="section-num" aria-hidden>04</span>
               <span className="section-eyebrow">Selected Work</span>
               <h2 className="projects__intro-title">
                 <span className="word-wrap"><span className="word">Things</span></span>{" "}

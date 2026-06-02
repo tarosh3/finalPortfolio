@@ -120,6 +120,7 @@ export default function Skills() {
   return (
     <section id="skills" ref={sectionRef} className="skills">
       <div className="section-container">
+        <span className="section-num" aria-hidden>03</span>
         <span className="section-eyebrow">Skills</span>
         <h2 className="section-title">
           My <span className="text-accent">tech arsenal</span>

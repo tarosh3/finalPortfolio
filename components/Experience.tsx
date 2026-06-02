@@ -71,6 +71,7 @@ export default function Experience() {
   return (
     <section id="experience" ref={sectionRef} className="experience">
       <div className="section-container">
+        <span className="section-num" aria-hidden>02</span>
         <span className="section-eyebrow">Experience</span>
         <h2 className="section-title">
           Where I&apos;ve <span className="text-accent">built & shipped</span>

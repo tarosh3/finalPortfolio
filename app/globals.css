@@ -717,6 +717,33 @@ section[id] {
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.08));
 }
 
+/* ── Brush reveal (hover-paint the anime twin over the photo) ── */
+.brush-reveal { position: relative; display: block; }
+.brush-reveal__base { width: 100%; height: auto; display: block; object-fit: contain; -webkit-user-drag: none; }
+.brush-reveal__canvas { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
+.brush-reveal__hint {
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translateX(-50%);
+  z-index: 3;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  background: color-mix(in srgb, var(--bg) 70%, transparent);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  pointer-events: none;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+.brush-reveal:hover .brush-reveal__hint { opacity: 0; }
+@media (pointer: coarse) { .brush-reveal__hint { display: none; } }
+
 /* Scroll indicator */
 .hero__scroll {
   position: absolute;

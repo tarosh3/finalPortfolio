@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { assets } from "@/lib/portfolio-data";
 import { useMagnetic } from "@/lib/useMagnetic";
+import BrushReveal from "./BrushReveal";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -154,13 +154,13 @@ export default function Hero() {
           <div className="hero__blob hero__blob--1" />
           <div className="hero__blob hero__blob--2" />
           <div ref={imageRef} className="hero__image-wrap">
-            <Image
-              src={assets.character.photo}
+            <BrushReveal
+              base={assets.character.photo}
+              reveal={assets.character.photoAnime}
               alt="Tarosh Mathuria"
               width={773}
               height={1130}
               className="hero__image"
-              priority
             />
           </div>
         </div>

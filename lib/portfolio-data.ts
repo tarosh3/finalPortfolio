@@ -197,6 +197,10 @@ export const assets = {
   },
   character: {
     photo: "/assets/character/Subject.png", // real headshot (cutout)
+    // Anime twin of Subject.png — MUST be the exact same pose, framing and
+    // aspect ratio so the brush-reveal aligns. Until added, BrushReveal falls
+    // back to a stylized filtered copy of the real photo.
+    photoAnime: "/assets/character/subject-anime.png",
     hero: "/assets/character/tarosh-hero-transparent.png",
     training: "/assets/character/tarosh-training-transparent.png",
     debugging: "/assets/character/tarosh-debugging-transparent.png",

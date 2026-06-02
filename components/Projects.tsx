@@ -236,10 +236,10 @@ export default function Projects() {
               <div className="projects__intro-blob" />
               <div className="projects__character">
                 <Image
-                  src={assets.character.debugging}
-                  alt="Tarosh debugging"
-                  width={1024}
-                  height={1536}
+                  src={assets.character.photo}
+                  alt="Tarosh Mathuria"
+                  width={773}
+                  height={1130}
                   className="projects__character-img"
                 />
               </div>

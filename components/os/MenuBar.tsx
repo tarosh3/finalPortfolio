@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { APPS, type AppId } from "@/lib/os";
 import Sym from "./Sym";
 import Logo from "./Logo";
@@ -49,6 +50,10 @@ export default function MenuBar({ activeApp, activeId, onOpen, onSpotlight, onCo
       </div>
 
       <div className="os-menubar__right">
+        <Link href="/portfolio" className="os-menubar__portfolio" aria-label="Open the scrolling portfolio" title="Scrolling portfolio">
+          <Sym name="view_day" size={17} />
+          <span className="os-menubar__portfolio-label">Scroll view</span>
+        </Link>
         <button className="os-menubar__search" onClick={onSpotlight} aria-label="Search apps">
           <Sym name="search" size={16} />
           <span className="os-menubar__search-label">Search</span>

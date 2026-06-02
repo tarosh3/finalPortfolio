@@ -155,10 +155,10 @@ export default function Hero() {
           <div className="hero__blob hero__blob--2" />
           <div ref={imageRef} className="hero__image-wrap">
             <Image
-              src={assets.character.hero}
+              src={assets.character.photo}
               alt="Tarosh Mathuria"
-              width={923}
-              height={1704}
+              width={773}
+              height={1130}
               className="hero__image"
               priority
             />

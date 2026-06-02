@@ -131,7 +131,7 @@ export default function Contact() {
           <div className="contact__right">
             <div className="contact__blob" />
             <div className="contact__character">
-              <Image src={assets.character.final} alt="Tarosh" width={887} height={1774} className="contact__character-img" />
+              <Image src={assets.character.photo} alt="Tarosh Mathuria" width={773} height={1130} className="contact__character-img" />
             </div>
           </div>
         </div>

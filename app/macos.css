@@ -125,6 +125,23 @@
 .os-menubar__menu { color: var(--text-muted); cursor: default; }
 .os-menubar__menu:hover { color: var(--text); }
 .os-menubar__right { display: flex; align-items: center; gap: 14px; }
+.os-menubar__portfolio {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 11px 3px 8px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text);
+  background: color-mix(in srgb, var(--action) 24%, transparent);
+  border: 1px solid color-mix(in srgb, var(--action) 55%, transparent);
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.os-menubar__portfolio:hover { background: var(--action); color: var(--ink); transform: translateY(-1px); box-shadow: 0 4px 14px color-mix(in srgb, var(--action) 45%, transparent); }
+.is-dark .os-menubar__portfolio { color: #fff; }
+.is-dark .os-menubar__portfolio:hover { color: var(--ink); }
+@media (max-width: 720px) { .os-menubar__portfolio-label { display: none; } .os-menubar__portfolio { padding: 4px 7px; } }
 .os-menubar__icon { color: var(--text); }
 .os-menubar__clock { display: flex; gap: 10px; font-weight: 600; font-variant-numeric: tabular-nums; }
 .os-menubar__time { color: var(--text); }

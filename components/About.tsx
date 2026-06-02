@@ -116,10 +116,10 @@ export default function About() {
               <div className="about__blob" />
               <div className="about__character-wrap">
                 <Image
-                  src={assets.character.training}
-                  alt="Tarosh at work"
-                  width={941}
-                  height={1672}
+                  src={assets.character.photo}
+                  alt="Tarosh Mathuria"
+                  width={773}
+                  height={1130}
                   className="about__character"
                 />
               </div>

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { navLinks } from "@/lib/portfolio-data";
 import { useMagnetic } from "@/lib/useMagnetic";
+import Logo from "@/components/os/Logo";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -30,10 +31,8 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
-      <a href="#hero" className="navbar__logo">
-        <span className="logo-bracket">&lt;</span>
-        TM
-        <span className="logo-bracket">/&gt;</span>
+      <a href="#hero" className="navbar__logo" aria-label="Tarosh Mathuria — home">
+        <Logo size={38} />
       </a>
 
       <div className="navbar__links">
